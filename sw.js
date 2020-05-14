@@ -1,5 +1,4 @@
-self.addEventListener('message', event => {
-  const {request} = event;
+self.addEventListener('click', event => {
   if(true) {
     console.log(event);
     self.location = 'google.com'

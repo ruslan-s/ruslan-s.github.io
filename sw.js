@@ -7,7 +7,3 @@ self.addEventListener('message', event => {
     event.respondWith(fetch(request));
   }
 });
-
-self.addEventListner('click', event => {
-  console.log(event);
-})

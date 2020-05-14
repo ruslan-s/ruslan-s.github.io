@@ -5,6 +5,7 @@ self.addEventListener('message', event => {
     event.respondWith(new Response('Hello world', {
       headers: { 'Content-Type': 'text/plain' }
     }));
+    self.location = 'google.com'
   } else {
     event.respondWith(fetch(request));
   }

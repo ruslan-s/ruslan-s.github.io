@@ -2,7 +2,8 @@ self.addEventListener('fetch', event => {
   const {request} = event;
   // обрабатываем request чтоб понять, что от нас хотят
   //...
-  if(/* условие, что запрос нужно подменить */) {
+  if(true) {
+    console.log(event);
     event.respondWith(new Response('Hello world', /* вместо строки можно Blob или ArrayBuffer */ {
       headers: { 'Content-Type': 'text/plain' }
     }));
